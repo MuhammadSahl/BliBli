@@ -64,12 +64,35 @@
         height: auto;
       }
 
+      .container {
+        display: grid; /* Mengatur elemen-elemen di dalam container dengan grid */
+        grid-template-columns: repeat(
+          2,
+          1fr
+        ); /* Membagi container menjadi dua kolom dengan lebar yang sama */
+        gap: 10px; /* Mengatur jarak antara kedua elemen */
+      }
+
+      .mini {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+      }
+
+      .icon-mini {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        fill: #0095da;
+      }
+
       #btn-google-left {
-        margin-right: 35px !important ;
+        margin-right: 15px !important;
+        margin-left: 25px;
       }
 
       #btn-google-right {
-        margin-left: 45px !important;
+        margin-left: 15px !important;
       }
 
       @media (max-width: 932px) {
@@ -128,6 +151,36 @@
           </div>
           <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-primary">Masuk</button>
+          </div>
+          <div class="container">
+            <div class="mini">
+              <a href="" class="text-decoration-none">
+                <div class="icon-mini">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"
+                    />
+                  </svg>
+                </div>
+                <span>Masuk dengan nomor hp</span>
+              </a>
+            </div>
+
+            <div class="mini">
+              <a href="" class="text-decoration-none">
+                <img
+                  class="icon-mini"
+                  src="download-removebg-preview.png"
+                  alt="icon"
+                />
+                <span>Masuk dengan nomor hp</span>
+              </a>
+            </div>
           </div>
 
           <a href="#">
