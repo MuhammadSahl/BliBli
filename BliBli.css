@@ -1,0 +1,18 @@
+#hero 
+{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-right img 
+{
+    width: 85%;
+}
+
+.hero-right
+{
+    display: flex;
+    justify-content: center;
+}
